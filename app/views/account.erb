@@ -7,7 +7,7 @@
   </head>
   <body id="page-top">
     <h2>Welcome <%= Helpers.current_user(session)[:name] %></h2>
-    Balance: <%= Helpers.current_user(session).[:balance].to_s %><br />
+    Balance: <%= Helpers.current_user(session).[:balance] %><br />
     <a href="/logout">Log Out</a>
   </body>
 </html>
