@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
-    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    
-
+    <h2>Welcome <%= current_user(session).name %></h2>
+    Balance: <%= current_user(session).balance.to_s %><br />
+    <a href="/logout">Logout</a>
   </body>
 </html>
